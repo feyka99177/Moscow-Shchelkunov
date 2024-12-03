@@ -33,4 +33,9 @@ class MainWindow(QMainWindow):
     y = random.randint(0, self.width() - diameter)
     qp.drawEllips(x, y, dameter, diameter)
 
-    if 
+    if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    wt = WordTrick()
+    wt.show()
+    sys.exit(app.exec())
+
